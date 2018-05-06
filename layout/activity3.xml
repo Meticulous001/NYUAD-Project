@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_3"
+
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.hackathon.sha3by.sha3by.Activity3"
+
+>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll1"
+        >
+        <TextView
+            android:id="@+id/ourname"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "NAME"/>
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:clipToPadding="false"
+        android:focusableInTouchMode="true"
+        tools:context="com.hackathon.sha3by.sha3by.Activity3"
+        app:layout_constraintTop_toBottomOf="@id/ll1"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+
+        >
+
+
+        <ListView
+            android:id="@+id/messages"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:divider="#fff"
+            android:scrollbars="vertical"
+            android:stackFromBottom="true"
+
+            android:transcriptMode="alwaysScroll" />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@id/activity_3"
+
+
+        >
+            <EditText
+                android:id="@+id/input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="Input"
+                android:ems="10"
+                android:paddingHorizontal="10dp"
+
+                />
+            <Button
+                android:id="@+id/b_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="GO"
+               />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    tools:context="com.hackathon.sha3by.sha3by.MainActivity"
+    >
+
+    <Button
+        android:id="@+id/second_activity"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Sign Up" />
+
+    <EditText
+        android:id="@+id/personName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+
+        android:ems="10"
+        android:hint="Name"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="96dp"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/englishButton"
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_alignRight="@+id/textView"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+
+            android:text="English" />
+
+        <RadioButton
+            android:id="@+id/arabicButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+
+            android:text="Arabic" />
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="193dp"
+        android:layout_height="61dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@mipmap/sawa_two" />
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/avatar3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:drawableTop="@mipmap/avatar3" />
+
+        <RadioButton
+            android:id="@+id/hij"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:drawableTop="@mipmap/hij" />
+    </RadioGroup>
+
+</RelativeLayout>
