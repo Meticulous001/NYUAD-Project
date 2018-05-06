@@ -1,4 +1,1 @@
-# NYUAD-Project
-
-
-An android app that enhances the teaching of arabic (especially colloquial arabic) to non-arabic speakers
+Sawa is a language learning tool and a community building platform between non-native Arabic learnersand refugees that have conversational language speaking skills.  
